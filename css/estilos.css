@@ -374,10 +374,28 @@ figure {
   flex-wrap: inherit;
 }
 
-/* DEsktop first:
+.burger-button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left:5px;
+  top:5px;
+  color:white;
+}
+
+/* Desktop first:
   empezar desde el MQ mas grande
 */
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
+  .event-list-title{
+    margin-left: 0;
+  }
   .container{
     padding: 0 1em;
   }
@@ -420,7 +438,10 @@ figure {
   position: relative;
 }
 @media screen and (max-width: 767px){
-
+  h2{
+    font-size: 1.2em;
+    margin: .5em 0;
+  }
   .header{
     display: block;
     height: auto;
@@ -434,9 +455,30 @@ figure {
   }
   .header a{
     justify-content: center; /* Centrar Horizontalmente elementos que son flex */
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: .5em;
   }
   .header .logo{
     text-align: center;
+  }
+  .menu{
+    position: fixed;
+    background-color: rgba(5, 111, 255,0.9);
+    z-index: 3;
+    top:0;
+    bottom: 0;
+    left:-100vw; 
+    width: 100vw;
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+  .menu.is-active{
+    left:0;
   }
   .project {
     display: block;
@@ -466,7 +508,7 @@ figure {
     font-size: 1em;
   }
   .project-description{
-    font-size: .8em;
+    font-size: 1em;
   }
   .event {
     width: auto;
@@ -475,10 +517,13 @@ figure {
   .event img{
     width: 100%;
   }
+  .burger-button{
+    display: block;
+  }
 }
 @media screen and (max-width: 480px){
   .project-details{
-    font-size: 12px;
+    font-size: 14px;
   }
   .event-detail{
     margin: -2em .5em .5em .5em;
@@ -504,6 +549,11 @@ figure {
   .hero h1{
     font-size: 1.3em;
   }
+  .social-link{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+  }
 }
 @media screen and (max-width: 320px){
   .hero h1{
@@ -512,4 +562,5 @@ figure {
   .hero{
     padding: 2em 1em;
   }
+  
 }
