@@ -2,10 +2,12 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <title>Leonidas Esteban</title>
+    <title>Andres Carrion</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+   <!--<link rel="stylesheet" href="css/media.css" media="screen and (max-width:780px)">-->
     <link rel="stylesheet" href="css/estilos.css">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <header class="header">
@@ -31,14 +33,14 @@
     <section class="hero">
       <div class="container">
         <h1>
-          Hola! Soy <strong>Leonidas Esteban</strong> <br/> Desarrollador  <strong>Javascript</strong> con <br> pasión por la <strong>enseñanza</strong>
+          Hola! Soy <strong>Andres Carrion</strong> <br/> Desarrollador  <strong>Java</strong> con <br> pasión por <strong>aprender</strong>
         </h1>
         <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"> 
       </div>
     </section>
     <section id="portafolio" class="portfolio">
       <div class="container">
-        <h2>Portafolio (Proyectos Destacados)</h2>
+      <h2>Portafolio (Proyectos Destacados)</h2>
       <article class="project">
         <div class="project-details">
           <h3 class="project-title">Platzi Video</h3>
@@ -70,9 +72,11 @@
       </div>
       
     </section>
+    
     <div class="container">
       <h2 class="event-list-title">Más sobre mi experiencia</h2>
     </div>
+    
     <section id="eventos" class="event-list">
       <div class="container">
         <article class="event">
@@ -87,7 +91,9 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <div class="flexible-video">
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/enfUBdV_OAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
@@ -97,7 +103,7 @@
         </article>
         <article class="event">
           <figure class="event-imageContainer">
-            <img class="event-image" src="images/platzi-conf.jpg" width="500" />
+            <video class="html-video" src="https://youtu.be/enfUBdV_OAU" controls></video>
           </figure>
           <div class="event-detail">
             <h3 class="event-title">PlatziConf México 2018</h3>
